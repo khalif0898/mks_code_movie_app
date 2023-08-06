@@ -14,7 +14,6 @@ class HomeData {
     );
     // problem: parsing list data to object
     var json = jsonDecode(response.body)['results'];
-    print(json);
     List<Movie> result = [];
     result = json.map<Movie>((e) => Movie.fromJson(e)).toList();
 
